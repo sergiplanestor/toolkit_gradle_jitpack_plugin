@@ -15,15 +15,18 @@ dependencies {
 }
 
 pluginBundle {
-    website = "https://github.com/sergiplanestor/"
+    website = "https://github.com/sergiplanestor/toolkit_gradle_jitpack_plugin"
+    vcsUrl = "https://github.com/sergiplanestor/toolkit_gradle_jitpack_plugin.git"
     tags = listOf("testing", "integrationTesting", "compatibility")
 }
 
 gradlePlugin {
     val jitpackPublish by plugins.creating {
-        id = "toolkit-jitpack-publish"
+        id = "com.splanes.plugin.toolkit-jitpack-publish"
+        group = "com.splanes"
+        version = "1.0.0"
         displayName = "Custom plugin which publishes the module sources to jitpack"
-        description = "Custom plugin which publishes the module sources to jitpack. More info: <a href=\"https://github.com/sergiplanestor/\">Github</a>"
+        description = "Custom plugin which publishes the module sources to jitpack. More info: <a href=\"https://github.com/sergiplanestor/toolkit_gradle_jitpack_plugin\">Github</a>"
         implementationClass = "com.splanes.plugin.JitpackPublishPlugin"
     }
 }

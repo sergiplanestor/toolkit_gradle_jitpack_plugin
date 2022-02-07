@@ -3,3 +3,4 @@
 /buildSrc/.gradle/
 /buildSrc/build/
 /toolkit-jitpack-publish/build/
+/gradle.properties
